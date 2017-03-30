@@ -14,7 +14,8 @@ let db;
 
 //app.listen(3000);
 
-var mongoPath = "mongodb://maddie:54321@ds011943.mlab.com:11943/acadgild"
+var mongoPath = process.env.MONGO_URL; //in terminal window and in working directory do:
+					//export MONGO_URL=mongodb://<dbuser>:<dbpassword>@ds011943.mlab.com:11943/acadgild
 //"mongodb://localhost/acadgild"
 /*MongoClient.connect(mongoPath, (err,database) =>{
 	if(err) throw err;
